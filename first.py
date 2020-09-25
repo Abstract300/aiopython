@@ -41,7 +41,7 @@ async def long_running_process(num):
             await asyncio.sleep(1)
     except asyncio.CancelledError:
         print('Recieved cancel for long_running_process', num)
-    
+
 
 async def another_long_running_process(num):
     'Wow another long running process!'
